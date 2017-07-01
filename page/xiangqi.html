@@ -1,0 +1,175 @@
+<!doctype html>
+<head>
+    <meta charset="gbk">
+    <title>XiangQi</title>
+    <style>
+        * {margin:0;padding:0;}
+        .clearfix:after{content:"020";display:block;height:0;clear:both;visibility:hidden}.clearfix{*zoom:1}
+        #xiangqi {margin:15px;padding:1px;border:5px solid #999;width:410px;}
+        #xiangqi ul {padding:2px 0 0 2px;background:#999;width:408px;}
+        #xiangqi li {float:left;width:49px;height:49px;margin:0 2px 2px 0;list-style:none;background:#ccc;}
+        #xiangqi .n5th {margin-right:0;width:51px;height:51px;line-height:51px;font-size:25px;color:#666;}
+        #xiangqi .last {height:51px;line-height:51px;}
+        #xiangqi .transform {
+            progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+            -webkit-transform:rotate(-180deg);
+            -moz-transform:rotate(-180deg);
+        }
+        #xiangqi .triangle-1 {
+            border-color:transparent transparent #666 transparent;
+            border-style:solid;
+            border-width:0 49px 49px 0;
+            height:0px;
+            width:0px;
+            position:relative;
+        }
+        #xiangqi .triangle-1 div {
+            border-color:transparent transparent #ccc transparent;
+            border-style:solid;
+            border-width:0 48px 48px 0;
+            height:0px;
+            width:0px;
+            position:absolute;
+            bottom:-49px;
+            right:-48px;
+        }
+        #xiangqi .triangle-2 {
+            border-color:transparent #666 transparent #666;
+            border-style:solid;
+            border-width:0 0 49px 49px;
+            height:0px;
+            width:0px;
+            position:relative;
+        }
+        #xiangqi .triangle-2 div {
+            border-color:transparent #ccc transparent #ccc;
+            border-style:solid;
+            border-width:0 0 48px 48px;
+            height:0px;
+            width:0px;
+            position:absolute;
+            top:0;
+            left:-49px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="xiangqi">
+    <ul class="clearfix">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            <div class="triangle-1">
+                <div></div>
+            </div>
+        </li>
+        <li>
+            <div class="triangle-2">
+                <div></div>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            <div class="triangle-2">
+                <div></div>
+            </div>
+        </li>
+        <li>
+            <div class="triangle-1">
+                <div></div>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li class="n5th"></li>
+        <li class="n5th">楚</li>
+        <li class="n5th">河</li>
+        <li class="n5th"></li>
+        <li class="n5th"></li>
+        <li class="n5th transform">界</li>
+        <li class="n5th transform">漢</li>
+        <li class="last"></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            <div class="triangle-1">
+                <div></div>
+            </div>
+        </li>
+        <li>
+            <div class="triangle-2">
+                <div></div>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            <div class="triangle-2">
+                <div></div>
+            </div>
+        </li>
+        <li>
+            <div class="triangle-1">
+                <div></div>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
