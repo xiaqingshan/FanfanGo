@@ -45,3 +45,77 @@ width:0px;
 position:absolute;
 top:0;
 left:-49px;
+}
+
+:root {   
+  --base-board-width: 720px;
+  --base-board-height: 940px;
+  --base-block-width: 140px;
+  --base-block-height: 70px;
+  --base-binzhan-width: 60px;
+  --base-binzhan-height: 20px;  
+  --base-qianxian-width: 60px;
+  --base-qianxian-height: 40px; 
+  --base-xingying-width: 60px;
+  --base-xingying-height: 70px;  
+  --base-dabenying-width: 80px;
+  --base-dabenying-height: 30px;
+}
+
+#junqi {
+	margin:15px;
+	padding:1px;
+	border:5px solid #999;
+	width:var( --base-board-width );
+	height:var( --base-board-height) ;
+}
+#junqi ul {
+	padding:2px 0 0 2px;
+	background:white;
+	height:var( --base-block-height) ;
+}
+#junqi li {
+	float:left;
+	width: var( --base-block-width );
+	height: var( --base-block-height ); 
+	margin:0 2px 2px 0;
+	list-style:none;
+	background:white;
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+#junqi .binzhan { 
+	width: var( --base-binzhan-width );
+	height: var( --base-binzhan-height ); 
+	background: white; 
+	border:1px solid gray;
+	text-align:center;
+} 
+#junqi .xingying { 
+	width: var( --base-xingying-width );
+	height: var( --base-xingying-height ); 
+	line-height: var( --base-xingying-height );
+	background: white; 
+	border:1px solid gray;
+	border-radius: 50%;
+	text-align:center;
+} 
+#junqi .dabenying { 
+	width: var( --base-dabenying-width );
+	height: var( --base-dabenying-height ); 
+	line-height: var( --base-dabenying-height );
+	background: #999; 
+	border:2px solid gray;
+	text-align:center;
+} 
+#junqi .qianxian { 
+	width: var( --base-qianxian-width );
+	height: var( --base-qianxian-height ); 
+	line-height: var( --base-qianxian-height );
+	background: white; 
+	border:1px dashed gray;
+	text-align:center;
+} 
