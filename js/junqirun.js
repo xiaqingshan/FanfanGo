@@ -39,17 +39,14 @@ function initAll() {
     redRolesList = ["junqi","siling","junzhang","shizhang1","shizhang2","lvzhang1","lvzhang2","tuanzhang1","tuanzhang2","yingzhang1","yingzhang2","lianzhang1","lianzhang2","lianzhang3","paizhang1","paizhang2","paizhang3","gongbing1","gongbing2","gongbing3","dilei1","dilei2","dilei3","zhadan1","zhadan2"];
     blueRolesList = ["junqi","siling","junzhang","shizhang1","shizhang2","lvzhang1","lvzhang2","tuanzhang1","tuanzhang2","yingzhang1","yingzhang2","lianzhang1","lianzhang2","lianzhang3","paizhang1","paizhang2","paizhang3","gongbing1","gongbing2","gongbing3","dilei1","dilei2","dilei3","zhadan1","zhadan2"];
 
-
-    role = "军长";
-
     function huaqizi(hori,vert,hongorlan,role) {
         theNodeHandler = $("#bh"+hori+"v"+vert);
         theNodeHandler.removeClass("bingzhan");
         if(hongorlan == "hong"){
-            theNodeHandler.addClass("hongfangqizi");
+            theNodeHandler.addClass("hongfangan");
         }
         if(hongorlan == "lan"){
-            theNodeHandler.addClass("lanfangqizi");
+            theNodeHandler.addClass("lanfangan");
         }
 
         theNodeHandler.text(role);
@@ -88,3 +85,16 @@ function initAll() {
 
 //
 initAll();
+
+$("div[id^='bh']").click(function(){
+    mm = $("#"+this.id);
+    if(this.className == "lanfangan"){
+        mm.removeClass("lanfangan");
+        mm.addClass("lanfangqizi");
+    }
+    if(this.className == "hongfangan"){
+        mm.removeClass("hongfangan");
+        mm.addClass("hongfangqizi");
+    }
+
+});
